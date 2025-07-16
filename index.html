@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre de Date - Inima Digitală</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to the JavaScript file with defer attribute -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="progress-bar-container"><div id="progress-fill"></div></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="nav-brand">Centre de Date</a>
+            <button class="nav-toggle" aria-label="Meniu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="#sectors" class="nav-link">Sectoare</a></li>
+                    <li><a href="#synthesis" class="nav-link">Sinteză</a></li>
+                    <li><a href="#careers" class="nav-link">Cariere</a></li>
+                    <li><a href="#quiz" class="nav-link">Quiz</a></li>
+                    <li><a href="#join" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1 class="hero-title">Centre de Date</h1>
+                <span id="hero-slogan" class="hero-slogan"></span>
+                <p id="hero-tagline" class="hero-tagline"></p>
+                <a href="#intro" class="btn">Începe Călătoria</a>
+            </div>
+        </section>
+
+        <section id="intro">
+            <div class="container">
+                <h2 class="section-title">Ce este un Centru de Date?</h2>
+                <p class="section-subtitle">Este mult mai mult decât o clădire plină de servere. Este un ecosistem complex, creierul digital care alimentează serviciile pe care le folosim zilnic.</p>
+                <div class="intro-analogy">
+                    <p><strong>Analogie:</strong> Imaginați-vă un centru de date ca pe creierul digital al unei companii. Aici se stochează amintirile (datele), se procesează gândurile (aplicațiile) și se transmit semnalele (rețeaua) către restul 'corpului' digital.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sectors">
+            <div class="container">
+                <h2 class="section-title">Cele 7 Motoare ale Centrului de Date</h2>
+                <p class="section-subtitle">Fiecare sector are o misiune clară. Descoperă cum colaborează pentru a crea un sistem funcțional, de la fundația fizică până la aplicația pe care o vezi pe ecran.</p>
+                <div id="sectors-accordion" class="sectors-accordion">
+                    <!-- Sector items will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="synthesis">
+            <div class="container">
+                <h2 class="section-title">Imaginea de Ansamblu</h2>
+                <p class="section-subtitle">Niciun sector nu funcționează izolat. Plimbă mouse-ul sau atinge un nod pentru a vedea cum se leagă totul și pentru a înțelege un flux de lucru tipic.</p>
+                <div class="synthesis-container">
+                    <svg id="synthesis-diagram" class="synthesis-diagram" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Edges and Nodes will be populated and managed by JS, but defined here for structure -->
+                        <line id="edge-physical-virt" class="diagram-edge" x1="400" y1="450" x2="400" y2="350"/>
+                        <line id="edge-virt-network" class="diagram-edge" x1="400" y1="350" x2="250" y2="250"/>
+                        <line id="edge-virt-cloud" class="diagram-edge" x1="400" y1="350" x2="550" y2="250"/>
+                        <line id="edge-network-apps" class="diagram-edge" x1="250" y1="250" x2="250" y2="150"/>
+                        <line id="edge-cloud-devops" class="diagram-edge" x1="550" y1="250" x2="400" y2="150"/>
+                        <line id="edge-devops-apps" class="diagram-edge" x1="400" y1="150" x2="250" y2="150"/>
+                        <line id="edge-apps-db" class="diagram-edge" x1="250" y1="150" x2="400" y2="50"/>
+                        <line id="edge-devops-db" class="diagram-edge" x1="400" y1="150" x2="400" y2="50"/>
+                        
+                        <g id="node-physical" class="diagram-node" transform="translate(400, 450)"><circle r="35"/><text y="5">Fizic</text></g>
+                        <g id="node-virt" class="diagram-node" transform="translate(400, 350)"><circle r="35"/><text y="5">Virtualizare</text></g>
+                        <g id="node-network" class="diagram-node" transform="translate(250, 250)"><circle r="35"/><text y="5">Rețea</text></g>
+                        <g id="node-cloud" class="diagram-node" transform="translate(550, 250)"><circle r="35"/><text y="5">Cloud</text></g>
+                        <g id="node-devops" class="diagram-node" transform="translate(400, 150)"><circle r="35"/><text y="5">DevOps</text></g>
+                        <g id="node-apps" class="diagram-node" transform="translate(250, 150)"><circle r="35"/><text y="5">Aplicații</text></g>
+                        <g id="node-db" class="diagram-node" transform="translate(400, 50)"><circle r="35"/><text y="5">Baze Date</text></g>
+                    </svg>
+                    <div id="synthesis-text">Atinge un nod pentru a vedea descrierea fluxului.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="careers">
+            <div class="container">
+                <h2 class="section-title">Cariere în Centrul de Date</h2>
+                <p class="section-subtitle">Fiecare sector oferă oportunități unice de carieră. Dacă te pasionează un domeniu, iată câteva roluri pe care le-ai putea urma.</p>
+                <div id="career-grid" class="grid-layout">
+                    <!-- Career cards will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz">
+            <div class="container">
+                <h2 class="section-title">Verifică-ți Cunoștințele</h2>
+                <div id="quiz-container" class="card">
+                    <div id="question"></div>
+                    <div id="options" class="options"></div>
+                    <div class="quiz-controls">
+                        <button id="prev-question" class="btn">Anteriorul</button>
+                        <button id="next-question" class="btn">Următorul</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join">
+            <div class="container">
+                <h2 class="section-title">Alătură-te Echipei</h2>
+                <div class="join-content">
+                    <div class="join-info">
+                        <h3>Ești gata să construiești viitorul?</h3>
+                        <p>Căutăm talente pasionate de tehnologie, dornice să lucreze cu sisteme complexe și să aibă un impact real. Oferim un mediu de lucru stimulant și proiecte care contează.</p>
+                    </div>
+                    <form id="application-form">
+                        <h3>Aplică pentru un internship</h3>
+                        <div class="form-group">
+                            <label for="name">Nume complet</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresă de email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Trimite Aplicația</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
